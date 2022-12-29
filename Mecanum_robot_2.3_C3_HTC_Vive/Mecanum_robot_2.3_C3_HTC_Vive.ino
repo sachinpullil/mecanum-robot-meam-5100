@@ -21,12 +21,7 @@ return lastvalue;
 }
 
 /*ESPNow*/
-#include <WiFi.h>
 #include <esp_now.h>
-
-//Sachin's phone hotspot (CHANGE HERE and on C3 code to control from your hotspot)
-const char* ssid = "Sachin";
-const char* password = "sachin123";
 
 esp_now_peer_info_t staffcomm = {
   .peer_addr = {0x84,0xF7,0x03,0xA9,0x04,0x78}, 
@@ -87,15 +82,6 @@ void setup() {
 
   /*Set up ESPNow*/
   WiFi.mode(WIFI_STA);
-//  Serial.print("Access point: "); Serial.println(ssid);
-//  WiFi.begin(ssid, password);
-//  while (WiFi.status() != WL_CONNECTED )
-//  {
-//    delay(500);
-//    Serial.print(".");
-//  }
-//  Serial.println("Connected");
-//  Serial.print("Got IP: ");  Serial.println(WiFi.localIP());
   
   esp_now_init();      
   esp_now_add_peer(&staffcomm);
@@ -142,7 +128,6 @@ void loop() {
     }
   }
 
-  //nAngle = (int)(atan2(yRight - xLeft, xRight - yLeft)*180/M_PI);
   nAngle = movingAvg((int)(atan2(yRight - xLeft, xRight - yLeft)*180/M_PI), 9);
   Serial.printf("Vive Left: (%d, %d)\t Vive Right: (%d, %d) \t Angle: %d\n", xLeft, yLeft, yRight, xRight, nAngle);
     
