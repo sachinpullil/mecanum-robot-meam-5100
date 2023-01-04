@@ -12,7 +12,7 @@ In terms of unique design choices, we chose to create a holonomic mobile base us
 
 The diagram above depicts the structure of the system. The low-level microcontrollers send signals to the central ESP32 S2 controller which makes logical decisions depending on the selected behavior.
 
-## Follow wall (2X speeed)
+## Follow wall (2X speed)
 
 (GIF takes a few seconds to load)
 
