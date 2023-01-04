@@ -1,4 +1,4 @@
-# mecanum-robot-meam-5100
+# Mecanum Robot
 
 ## Overview
 
@@ -8,18 +8,18 @@ In terms of unique design choices, we chose to create a holonomic mobile base us
 
 ## Architecture
 
-![microcontroller-architecture](Images/MCU-architecture.png | width=200)
+<img src="Images/MCU-architecture.png" width="400" height="400">
 
 The diagram above depicts the structure of the system. The low-level microcontrollers send signals to the central ESP32 S2 controller which makes logical decisions depending on the selected behavior.
 
 ## Follow wall
 
-![wall-following](Images/wall-following.gif | width=200)
+<img src="Images/wall-following.gif" width="640" height="360">
 
 ## Push police car
 
-![push-police-car](Images/push-police-car.gif | width=200)
+<img src="Images/push-police-car.gif" width="640" height="360">
 
 ## Track an IR beacon
 
-![track-beacon](Images/track-beacon.gif | width=200)
+<img src="Images/track-beacon.gif" width="640" height="360">
