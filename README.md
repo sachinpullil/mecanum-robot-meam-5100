@@ -8,14 +8,18 @@ In terms of unique design choices, we chose to create a holonomic mobile base us
 
 ## Architecture
 
-![microcontroller-architecture](Images/MCU-architecture.png)
+![microcontroller-architecture](Images/MCU-architecture.png | width=200)
 
 The diagram above depicts the structure of the system. The low-level microcontrollers send signals to the central ESP32 S2 controller which makes logical decisions depending on the selected behavior.
 
+## Follow wall
+
+![wall-following](Images/wall-following.gif | width=200)
+
 ## Push police car
 
-![push-police-car](Images/push-police-car.gif)
+![push-police-car](Images/push-police-car.gif | width=200)
 
 ## Track an IR beacon
 
-![track-beacon](Images/track-beacon.gif)
+![track-beacon](Images/track-beacon.gif | width=200)
