@@ -14,6 +14,8 @@ The diagram above depicts the structure of the system. The low-level microcontro
 
 ## Follow wall
 
+(GIFs take a few seconds to load)
+
 <img src="Images/wall-following.gif" width="640" height="360">
 
 ## Push police car
